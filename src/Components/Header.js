@@ -10,7 +10,8 @@ class Header extends Component {
           target="_blank"
           title="YouCanBook.Deborah"
         >
-          <h1>YouCanBook.Deborah</h1>
+          <h1>YouCanBook</h1>
+          <p>Deborah Castiglioni</p>
         </a>
         <ul className="navbar-nav">
           <li>
@@ -22,7 +23,7 @@ class Header extends Component {
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://drive.google.com/file/d/1pQoB-M7cyg5TnNQjRRwNtSF-_3fmliQH/view?usp=sharing" target="_blank">
               Curriculum Vitae Español
             </a>
           </li>
