@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar" role="navigation">
         <a
           class="navbar-brand"
           href="http://www.lifecodeson.com/who-is-debs/"
