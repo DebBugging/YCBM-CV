@@ -1,21 +1,74 @@
 //Variables
 $light-green-bg: #71a394;
-$dark-green-bg:  #6b9a8c;
-
+$dark-green-bg: #6b9a8c;
+$text-color: #ffffff;
 
 .App {
-  background-image: linear-gradient(200deg, $light-green-bg 70%, $dark-green-bg 30%);
+  background-image: linear-gradient(
+    200deg,
+    $light-green-bg 70%,
+    $dark-green-bg 30%
+  );
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", Calibri, Candara, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555;
 }
 
+
+//Navigation//
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: $dark-green-bg;
+  padding: 1% 3%;
+
+  &-brand {
+    text-decoration: none;
+    color: $text-color;
+
+    h1 {
+      font-weight: 100;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    > li > a {
+      color: $text-color;
+      padding: 11px 12px 13px;
+      margin-top: 9px;
+      font-size: 20px;
+      border-radius: 4px;
+      line-height: 20px;
+      text-decoration: none;
+      font-weight: 200;
+
+      &:focus, &:hover {
+        color: $text-color;
+        background-color: $dark-green-bg;
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+    }
+
+     > .active > a, > .active > a:hover, > .active > a:focus {
+      background-color: $light-green-bg;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+li {
+  list-style: none;
 }
 
 .main-section {
@@ -23,9 +76,6 @@ $dark-green-bg:  #6b9a8c;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: $dark-green-bg;
-}
-
-.App-link {
-  color: #61dafb;
+  margin-top: 3%;
+  color: $text-color;
 }

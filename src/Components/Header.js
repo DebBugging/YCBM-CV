@@ -12,7 +12,7 @@ class Header extends Component {
         >
           <h1>YouCanBook.Deborah</h1>
         </a>
-        <ul className="navbar-links">
+        <ul className="navbar-nav">
           <li>
             <a
               href="https://drive.google.com/file/d/13wFMTUUrsy9DGUIui-nCg8Zkba1Gn1VC/view?usp=sharing"
